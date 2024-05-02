@@ -33,6 +33,14 @@ instruction_prompt = """Your goal is to summarize the patient health records wit
 
                   Lab Report: list out reported values of all parameters for the lab investigation. If there is any 
                   abnormal values, report it. Use the bio reference interval provided in the document if given. Include details only about the investigation.
+                  Objective: To analyze and summarize laboratory reports, ensuring a comprehensive review and accurate representation of all lab results to assist healthcare professionals in decision-making.
+                  Your instructions are the following
+                  Check for any abnormal values which lie outside their reference range and mention them under the subheading of abnormal test results.
+                  Organize the extraction process by categorizing tests (e.g., Hematological, Biochemical, Serological, Endocrine).
+                  Extract and document each test result under its respective category using a structured template that includes:
+                  Test Name
+                  Result with Units
+                  Biological Reference Interval
                   Do not give any notes or interpretations of your own.
                   \n
                   """
